@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Brick Lane Café</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const greeting = document.getElementById("greeting-message");
+        const hour = new Date().getHours();
+        let message = "Welcome to Brick Lane Café!";
+        if (hour < 12) {
+            message = "Good morning! Start your day with our fresh brews.";
+        } else if (hour < 18) {
+            message = "Good afternoon! Drop in for a midday pick-me-up.";
+        } else {
+            message = "Good evening! Unwind with a cozy cuppa.";
+        }
+        greeting.textContent = message;
+    });
+</script>
+
+<body class="is-preload">
+    <div id="wrapper" class="divided">
+
+        <!-- Banner -->
+        <section
+            class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+            <div class="content">
+                <p id="greeting-message" style="font-weight:bold; font-size:1.2em;"></p>
+                <h1>Brick Lane Café</h1>
+                <p>Experience the heart of Melbourne's laneway culture with our artisan coffee and gourmet brunch.</p>
+                <ul class="actions stacked">
+                    <li><a href="#menu" class="button big wide smooth-scroll-middle">Explore Our Menu</a></li>
+                </ul>
+            </div>
+            <div class="image">
+                <img src="images/cafe-banner.jpg" alt="Brick Lane Café Interior" />
+            </div>
+        </section>
+
+        <!-- Our Menu -->
+        <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+            id="menu">
+            <div class="content">
+                <h2>Our Menu</h2>
+                <p>From espresso classics to gourmet toasties and vegan treats, our menu is a celebration of Melbourne's
+                    diverse food culture.</p>
+                <ul class="actions stacked">
+                    <li><a href="#ingredients" class="button">Learn About Our Ingredients</a></li>
+                </ul>
+            </div>
+            <div class="image">
+                <img src="images/menu.jpg" alt="Delicious brunch plate" />
+            </div>
+        </section>
+
+        <!-- Fresh Ingredients -->
+        <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
+            id="ingredients">
+            <div class="content">
+                <h2>Locally Sourced</h2>
+                <p>We partner with local farms and producers to bring you the freshest and most sustainable ingredients
+                    every day.</p>
+                <ul class="actions stacked">
+                    <li><a href="#menu" class="button big wide smooth-scroll-middle">VIEW OUR INGREDIENTS</a></li>
+                </ul>
+            </div>
+            <div class="image">
+                <img src="images/ingredients.jpg" alt="Fresh produce and ingredients used at Brick Lane Café" />
+            </div>
+        </section>
+
+        <!-- Navigation Menu -->
+<header id="navbar">
+  <nav class="container">
+    <ul class="nav-links">
+      <li><a href="#banner">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#ingredients">Ingredients</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+        <!-- Contact -->
+        <section class="wrapper style1 align-center">
+            <div class="inner medium">
+                <h2>Contact Brick Lane Café</h2>
+                <form method="post" action="#">
+                    <div class="fields">
+                        <div class="field half">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" value="" />
+                        </div>
+                        <div class="field half">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" value="" />
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="6"></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions special">
+                        <li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+                    </ul>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="wrapper style1 align-center">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a>
+                    </li>
+                    <li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a>
+                    </li>
+                    <li><a href="#" class="icon brands style2 fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+                <p>&copy; 2025 Brick Lane Café. Design adapted from <a href="https://html5up.net">HTML5 UP</a>.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/scroll.js"></script>
+
+</body>
+
+</html>
